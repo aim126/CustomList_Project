@@ -18,10 +18,7 @@ namespace CustomList
             capacity = 4;
             items = new T[capacity];
         }
-        //Declaring an array for storing data
-        //private T[] arr = new T[100];
-
-        public T this[int index]
+            public T this[int index]
         {
             get { return items[index]; }
             set { items[index] = value; }
@@ -29,39 +26,46 @@ namespace CustomList
 
 
         }
-        
+
         public void Add(int value1)
         {
 
         }
-       
-        public class CustomList  :IEnumerable
+
+        public class CustomList : IEnumerable
         {
-            private string[] integerArray;
-            private List<T> MyList;
-
-            public MyList()
-            {
-                indexArray new string[] { "Value1", "Value2", Value3","Value4" };
-                MyList = new List<T>() {  "Value1","Value2", "Value3","Value4" };
-                public private readonly object Length;
-                int Count = (int++);
-                int Length = (Value1; int++);
-            }
-
-           public Enumarator GetEnumerator()
-           {
-               for (int index = 0; index < integrArray.Length; index++)
-               {
-                    yield return indexArray[indesx];
-                    yield return MyList[index];
-               }
-               yield return"That is the end of the list"
-
-                                
-        }
             
-           
+            private string[]IntegerArray;
+            private List<T> MyList;
+               public List()
+            {
+
+                IntegerArray = new string[] { "Value1", "Value2", "Value3", "Value4" };
+                MyList = new List() { "Value1", "Value2", "Value3", "Value4" }; }
+
+            public int Length;
+            private int Count = [index];
+            
+            
+
+
+            }
+            
+
+        public Enumarator GetEnumerator()
+        {
+            for (int index = 0; index < IntegerArray.Length; index++)
+            {
+                yield return IntegerArray[index];
+                yield return MyList[index];
+            }
+            yield return "That is the end of the list";
+
+
+
+        }
+
+ }         
            
               
        
