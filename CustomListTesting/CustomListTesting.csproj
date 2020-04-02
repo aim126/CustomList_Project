@@ -141,7 +141,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="MyList.cs" />
     <Compile Include="testingList.cs" />
     <Compile Include="..\UnitTest1.cs">

@@ -21,19 +21,59 @@ namespace CustomList
         //Declaring an array for storing data
         //private T[] arr = new T[100];
 
-        public  T this [int index]
+        public T this[int index]
         {
             get { return items[index]; }
             set { items[index] = value; }
-         
-            
 
-           }
+
+
+        }
         
-            public void Add(int value1)
+        public void Add(int value1)
         {
 
         }
-    }        
+       
+        public class CustomList  :IEnumerable
+        {
+            private string[] integerArray;
+            private List<T> MyList;
+
+            public MyList()
+            {
+                indexArray new string[] { "Value1", "Value2", Value3","Value4" };
+                MyList = new List<T>() {  "Value1","Value2", "Value3","Value4" };
+                public private readonly object Length;
+                int Count = (int++);
+                int Length = (Value1; int++);
+            }
+
+           public Enumarator GetEnumerator()
+           {
+               for (int index = 0; index < integrArray.Length; index++)
+               {
+                    yield return indexArray[indesx];
+                    yield return MyList[index];
+               }
+               yield return"That is the end of the list"
+
+                                
+        }
+            
            
-}
+           
+              
+       
+            
+            
+        
+                
+                 
+
+
+            
+          
+                                
+
+
