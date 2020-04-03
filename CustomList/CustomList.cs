@@ -8,10 +8,14 @@ namespace CustomList
 {
     public class MyList<T>
     {
+        MyList<int> vectorlist = new MyList<int>();
+       
         int count;
         public int Count { get; set; }
         int capacity;
         public int Capacity { get; set; }
+        public object IntegerArray { get; private set; }
+
         private T[] items;
         public MyList()
         {
@@ -44,12 +48,10 @@ namespace CustomList
                 MyList = new List() { "Value1", "Value2", "Value3", "Value4" }; }
 
             public int Length;
-            private int Count = [index];
-            
-            
+            private int Count = Index;
 
-
-            }
+            public static int Index { get; private set; }
+        }
             
 
         public Enumarator GetEnumerator()
@@ -61,11 +63,9 @@ namespace CustomList
             }
             yield return "That is the end of the list";
 
-
-
         }
 
- }         
+ }  }     
            
               
        
